@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3925d35e-e902-457c-b24a-b92e46f8a7fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1hwtTkOAisR6hUEGIGuUi4QvXnV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="10.17.35" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/db/migrations" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/api" />
+      <recent name="$PROJECT_DIR$/db" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="course.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/entities/course.js" working-dir="$PROJECT_DIR$/entities">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.course.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3925d35e-e902-457c-b24a-b92e46f8a7fd" name="Default Changelist" comment="" />
+      <created>1600933995169</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600933995169</updated>
+      <workItem from="1600933996229" duration="7507000" />
+      <workItem from="1600941605949" duration="79000" />
+      <workItem from="1600941725335" duration="28819000" />
+      <workItem from="1601020148803" duration="17170000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="84" y="215" width="1187" height="289" key="#SQL_Dialects" timestamp="1600941835095">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="84" y="215" width="1187" height="289" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1600941835095" />
+    <state x="278" y="24" width="800" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600949289524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="278" y="24" width="800" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600949289524" />
+    <state x="437" y="168" width="575" height="384" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600957907132">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="168" width="575" height="384" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1600957907132" />
+    <state width="1324" height="372" key="GridCell.Tab.0.bottom" timestamp="1601035451412">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601035451412" />
+    <state width="1324" height="372" key="GridCell.Tab.0.center" timestamp="1601035451412">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601035451412" />
+    <state width="1324" height="372" key="GridCell.Tab.0.left" timestamp="1601035451411">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601035451411" />
+    <state width="1324" height="372" key="GridCell.Tab.0.right" timestamp="1601035451412">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601035451412" />
+    <state width="1324" height="372" key="GridCell.Tab.1.bottom" timestamp="1601035451413">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601035451413" />
+    <state width="1324" height="372" key="GridCell.Tab.1.center" timestamp="1601035451413">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601035451413" />
+    <state width="1324" height="372" key="GridCell.Tab.1.left" timestamp="1601035451413">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601035451413" />
+    <state width="1324" height="372" key="GridCell.Tab.1.right" timestamp="1601035451413">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601035451413" />
+    <state width="1324" height="372" key="GridCell.Tab.2.bottom" timestamp="1601035451415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601035451415" />
+    <state width="1324" height="372" key="GridCell.Tab.2.center" timestamp="1601035451414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1601035451414" />
+    <state width="1324" height="372" key="GridCell.Tab.2.left" timestamp="1601035451414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1601035451414" />
+    <state width="1324" height="372" key="GridCell.Tab.2.right" timestamp="1601035451414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1601035451414" />
+    <state width="1324" height="372" key="GridCell.Tab.3.bottom" timestamp="1601035451416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601035451416" />
+    <state width="1324" height="372" key="GridCell.Tab.3.center" timestamp="1601035451415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1601035451415" />
+    <state width="1324" height="372" key="GridCell.Tab.3.left" timestamp="1601035451415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1601035451415" />
+    <state width="1324" height="372" key="GridCell.Tab.3.right" timestamp="1601035451416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="372" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1601035451416" />
+    <state x="560" y="253" width="322" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601024565967">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="560" y="253" width="322" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1601024565967" />
+    <state x="543" y="34" width="270" height="652" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1600965472895">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="543" y="34" width="270" height="652" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1600965472895" />
+    <state x="225" y="95" width="905" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601035104318">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="225" y="95" width="905" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1601035104318" />
+    <state x="347" y="160" key="run.anything.popup" timestamp="1600962045689">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="160" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600962045689" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600952410918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600952410918" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": 1165,
+    "host": "localhost",
+    "database": "node-app",
+    "port": 5432
+  },
+
+  "prod": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": 1165,
+    "host": "localhost",
+    "database": "node-app",
+    "port": 5432
+  },
+  "sql-file" : true
+}

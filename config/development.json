@@ -1,0 +1,6 @@
+{
+    "name":"My Node app Dev",
+    "mail": {
+        "host" :"dev-mail-server"
+    }
+}
