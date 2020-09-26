@@ -1,105 +1,95 @@
 const Joi = require("@hapi/joi");
 const client = require("../db/database");
 
-let findAll = async (req, res, next) => {
+let findAll = async (req, res) => {
+  var r = [];
 
-    var r = []
+  let sql = "SELECT * FROM courses";
 
-    let sql = "SELECT * FROM courses";
-
-    await client.query(sql, r)
-        .then(course => res.json(course.rows))
-        .catch(next);
+  await client
+    .query(sql, r)
+    .then((course) => res.json(course.rows))
 };
 
-let findById = async (req, res, next) => {
-    let id = parseInt(req.params.id);
+let findById = async (req, res) => {
+  let id = parseInt(req.params.id);
 
-    if (!id)
-        return res.status(404).send("The course with the given id was not found");
+  if (!id)
+    return res.status(404).send("The course with the given id was not found");
 
-    let sql = "SELECT courses.id, courses.name FROM courses WHERE courses.id= $1";
+  let sql = "SELECT courses.id, courses.name FROM courses WHERE courses.id= $1";
 
-    await client.query(sql, [id])
-        .then(course => res.json(course.rows))
-        .catch(next);
+  await client
+    .query(sql, [id])
+    .then((course) => res.json(course.rows))
 };
 
-let createCourse = async (req, res, next) => {
+let createCourse = async (req, res) => {
+  const { error } = validateCourse(req.body);
 
-    const {
-        error
-    } = validateCourse(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
 
-    if (error) return res.status(400).send(error.details[0].message);
+  var r = [];
 
-    var r = [];
+  r.push(req.body.name);
 
-    r.push(req.body.name);
+  let sql = `INSERT INTO courses (name) VALUES($1) RETURNING id, name`;
 
-    let sql = `INSERT INTO courses (name) VALUES($1) RETURNING id, name`
+  await client
+    .query(sql, r)
+    .then((course) => res.json(course.rows))
+};
 
-    await client.query(sql, r)
-        .then(course => res.json(course.rows))
-        .catch(next)
-}
+let updateCourse = async (req, res) => {
+  const id = parseInt(req.params.id);
 
-let updateCourse = async (req, res, next) => {
+  if (!id)
+    return res.status(404).send("The course with the given id was not found");
 
-    const id = parseInt(req.params.id)
+  const { name } = req.body;
 
-    if (!id)
-        return res.status(404).send("The course with the given id was not found");
+  await client.query(
+    "UPDATE courses SET name = $1 WHERE id = $2 RETURNING *",
+    [name, id],
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      if (typeof results.rows == "undefined") {
+        res.status(404).send(`Resource not found`);
+      } else if (Array.isArray(results.rows) && results.rows.length < 1) {
+        res.status(404).send(`Course not found`);
+      } else {
+        res.status(200).send(`Course modified with ID: ${results.rows[0].id}`);
+      }
+    }
+  );
+};
 
-    const { name } = req.body
+let deleteCourse = async (req, res) => {
+  let id = req.params.id;
 
-    client.query(
-        'UPDATE courses SET name = $1 WHERE id = $2 RETURNING *',
-        [name, id],
-        (error, results) => {
-            if (error) {
-                throw error
-            }
-            if (typeof results.rows == 'undefined') {
-                res.status(404).send(`Resource not found`);
-            } else if (Array.isArray(results.rows) && results.rows.length < 1) {
-                res.status(404).send(`Course not found`);
-            } else {
-                res.status(200).send(`Course modified with ID: ${results.rows[0].id}`)
-            }
+  if (!id)
+    return res.status(404).send("The course with the given id was not found");
 
-        }
-    )
-}
+  let sql = "DELETE FROM courses WHERE id = ($1) RETURNING id, name";
 
-let deleteCourse = async (req, res, next) => {
-    
-    let id = req.params.id;
-
-    if (!id)
-        return res.status(404).send("The course with the given id was not found");
-
-    let sql = "DELETE FROM courses WHERE id = ($1) RETURNING id, name";
-
-    await client.query(sql, [id])
-        .then(course => res.json(course.rows))
-        .catch(next)
-}
-
-
+  await client
+    .query(sql, [id])
+    .then((course) => res.json(course.rows))
+};
 
 function validateCourse(course) {
-    const schema = {
-        name: Joi.string().min(3).required(),
-    };
-    return Joi.validate(course, schema);
+  const schema = {
+    name: Joi.string().min(3).required(),
+  };
+  return Joi.validate(course, schema);
 }
 
-
 module.exports = {
-    createCourse,
-    findById,
-    findAll,
-    updateCourse,
-    deleteCourse,
+  createCourse,
+  findById,
+  findAll,
+  updateCourse,
+  deleteCourse,
 };

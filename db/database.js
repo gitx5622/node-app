@@ -1,4 +1,7 @@
+const dbConnection = require("debug")("app:db");
 const { Client } = require('pg')
+const dotenv = require("dotenv");
+dotenv.config();
 
 const client = new Client({
     user: process.env.PGUSER,
@@ -8,8 +11,6 @@ const client = new Client({
     port: process.env.PGPORT,
 })
 client.connect()
-.then(() => console.log("Connected to the database"))
-.catch(err => console.log("Could not connect to the database", err))
-
+.then(() => dbConnection("Connected to the database"))
 
 module.exports = client;

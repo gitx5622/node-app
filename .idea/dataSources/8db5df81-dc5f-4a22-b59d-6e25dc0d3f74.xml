@@ -257,10 +257,10 @@ false Antarctica/Davis
 false Antarctica/DumontDUrville
 false Antarctica/Macquarie
 false Antarctica/Mawson
-false Antarctica/McMurdo
+true Antarctica/McMurdo
 false Antarctica/Palmer
 false Antarctica/Rothera
-false Antarctica/South_Pole
+true Antarctica/South_Pole
 false Antarctica/Syowa
 true Antarctica/Troll
 false Antarctica/Vostok
@@ -649,8 +649,8 @@ false NOVT
 false NPT
 false NST
 false NUT
-false NZ
-false NZ-CHAT
+true NZ
+true NZ-CHAT
 true NZDT
 false NZST
 false NZT
@@ -675,10 +675,10 @@ true PST8PDT
 false PWT
 true PYST
 false PYT
-false Pacific/Apia
-false Pacific/Auckland
+true Pacific/Apia
+true Pacific/Auckland
 false Pacific/Bougainville
-false Pacific/Chatham
+true Pacific/Chatham
 false Pacific/Chuuk
 true Pacific/Easter
 false Pacific/Efate
@@ -1024,10 +1024,10 @@ false posix/Antarctica/Davis
 false posix/Antarctica/DumontDUrville
 false posix/Antarctica/Macquarie
 false posix/Antarctica/Mawson
-false posix/Antarctica/McMurdo
+true posix/Antarctica/McMurdo
 false posix/Antarctica/Palmer
 false posix/Antarctica/Rothera
-false posix/Antarctica/South_Pole
+true posix/Antarctica/South_Pole
 false posix/Antarctica/Syowa
 true posix/Antarctica/Troll
 false posix/Antarctica/Vostok
@@ -1320,15 +1320,15 @@ true posix/MST7MDT
 true posix/Mexico/BajaNorte
 true posix/Mexico/BajaSur
 true posix/Mexico/General
-false posix/NZ
-false posix/NZ-CHAT
+true posix/NZ
+true posix/NZ-CHAT
 true posix/Navajo
 false posix/PRC
 true posix/PST8PDT
-false posix/Pacific/Apia
-false posix/Pacific/Auckland
+true posix/Pacific/Apia
+true posix/Pacific/Auckland
 false posix/Pacific/Bougainville
-false posix/Pacific/Chatham
+true posix/Pacific/Chatham
 false posix/Pacific/Chuuk
 true posix/Pacific/Easter
 false posix/Pacific/Efate
@@ -1408,16 +1408,16 @@ true posix/WET
 false posix/Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1600984398</StartupTime>
+      <StartupTime>1601105236</StartupTime>
     </root>
     <database id="2" parent="1" name="node-app">
       <ObjectId>16384</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>540</IntrospectionStateNumber>
+      <IntrospectionStateNumber>603</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|16391|16393|1
+      <Relations>sequence|table|16484|16486|1
+sequence|table|16391|16393|1
 sequence|table|16456|16458|1
-sequence|table|16424|16426|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -1474,7 +1474,7 @@ sequence|table|16424|16426|1
       <Comment>standard public schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>541</IntrospectionStateNumber>
+      <IntrospectionStateNumber>604</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="16" parent="2" name="heap">
@@ -1557,9 +1557,9 @@ sequence|table|16424|16426|1
       <DataType>integer|0s</DataType>
     </sequence>
     <sequence id="30" parent="15" name="users_id_seq">
-      <ObjectId>16424</ObjectId>
+      <ObjectId>16484</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>526</StateNumber>
+      <StateNumber>602</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <table id="31" parent="15" name="courses">
@@ -1573,9 +1573,9 @@ sequence|table|16424|16426|1
       <StateNumber>501</StateNumber>
     </table>
     <table id="33" parent="15" name="users">
-      <ObjectId>16426</ObjectId>
+      <ObjectId>16486</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>526</StateNumber>
+      <StateNumber>602</StateNumber>
     </table>
     <column id="34" parent="31" name="id">
       <Position>1</Position>
@@ -1663,72 +1663,64 @@ sequence|table|16424|16426|1
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
+      <StateNumber>602</StateNumber>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="46" parent="33" name="first_name">
+    <column id="46" parent="33" name="name">
       <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
-      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="47" parent="33" name="last_name">
-      <Position>3</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
-      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="48" parent="33" name="username">
-      <Position>4</Position>
-      <DataType>varchar(15)|0s</DataType>
-      <StateNumber>526</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="49" parent="33" name="email">
-      <Position>5</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="50" parent="33" name="password_hash">
-      <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
+      <StateNumber>602</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="51" parent="33" name="created_at">
-      <Position>7</Position>
+    <column id="47" parent="33" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>602</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="48" parent="33" name="password">
+      <Position>4</Position>
+      <DataType>varchar(1024)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>602</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="33" name="created_at">
+      <Position>5</Position>
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
+      <StateNumber>602</StateNumber>
       <DefaultExpression>clock_timestamp()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="52" parent="33" name="updated_at">
-      <Position>8</Position>
+    <column id="50" parent="33" name="updated_at">
+      <Position>6</Position>
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>526</StateNumber>
+      <StateNumber>602</StateNumber>
       <DefaultExpression>clock_timestamp()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <index id="53" parent="33" name="users_pkey">
-      <ObjectId>16437</ObjectId>
-      <StateNumber>526</StateNumber>
+    <index id="51" parent="33" name="users_email_uniq_idx">
+      <ObjectId>16497</ObjectId>
+      <StateNumber>602</StateNumber>
+      <ColNames>&#x1b;lower(email::text)</ColNames>
+      <Unique>1</Unique>
+      <FunctionBased>1</FunctionBased>
+    </index>
+    <index id="52" parent="33" name="users_pkey">
+      <ObjectId>16495</ObjectId>
+      <StateNumber>602</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="54" parent="33" name="users_pkey">
-      <ObjectId>16438</ObjectId>
-      <StateNumber>526</StateNumber>
+    <key id="53" parent="33" name="users_pkey">
+      <ObjectId>16496</ObjectId>
+      <StateNumber>602</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>

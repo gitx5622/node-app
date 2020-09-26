@@ -11,14 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^15.0.3",
+    "bcrypt": "^5.0.0",
     "config": "^3.3.1",
     "db-migrate": "^0.11.11",
     "db-migrate-pg": "^1.2.2",
     "debug": "^4.2.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "integer": "^4.0.0",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
     "morgan": "^1.10.0",
-    "node-int64": "^0.4.0",
-    "pg": "^8.3.3"
+    "pg": "^8.3.3",
+    "winston": "^3.3.3"
   }
 }
